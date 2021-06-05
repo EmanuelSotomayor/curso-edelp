@@ -27,11 +27,11 @@
                             </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <div class="navbar-nav ms-auto">
-                                <a class="nav-link" href="#">El club</a>
-                                <a class="nav-link" href="#">Futbol</a>
-                                <a class="nav-link" href="#">Deportes</a>
-                                <a class="nav-link" href="#">Estadio</a>
-                                <a class="nav-link" href="#">Socios</a>
+                                <a class="nav-link" href="#club">El club</a>
+                                <a class="nav-link" href="#futbol">Futbol</a>
+                                <a class="nav-link" href="https://www.estudiantesdelaplata.com/deportes/" target="_blank">Deportes</a>
+                                <a class="nav-link" href="https://www.estudiantesdelaplata.com/el-club/estadio/" target="_blank">Estadio</a>
+                                <a class="nav-link" href="https://www.estudiantesdelaplata.com/socios/" target="_blank">Socios</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
             <!--Fin del header-->
 
             <!--Este section contendrá el carrousel--> 
-            <section role="carrousel">
+            <section id="futbol" role="carrousel">
                 <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -80,10 +80,14 @@
                 
             </section>
             <!--Fin del section-->
+
             <!--Inicio del section que contendrá las cards-->
-            <section class="container-fluid cards-background">
+            <section id="club" class="container-fluid cards-background">
                 <div class="row">
-                    <div class="col-12 col-md-3 mt-5">
+                    <!--Aplico justify-content-center a todas las columnas para que se centren-->
+                    <div class="col-12 col-md-3 mt-5 d-flex justify-content-center">
+                        <!--Cada CARD será un articulo,
+                        que estará dividida por su header y el cuerpo-->
                         <article class="cards card-A">
                             <header class="card-header">
                                 <div class="circle-icon">
@@ -91,15 +95,17 @@
                                 </div>
                                 <h3 class="title">Historia</h3>
                             </header>
-                            <p class="text">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
-                                del esfuerzo y del sacrificio individual en pos del bien colectivo. 
-                                Es la identidad que lo atraviesa, que lo forja 
-                                y que le da la voluntad necesaria para creer en utopías. 
-                                Así lo marca su historia, desde la fundación hasta la actualidad.
-                            </p>
+                            <div class="card-text">
+                                <p class="text">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
+                                    del esfuerzo y del sacrificio individual en pos del bien colectivo. 
+                                    Es la identidad que lo atraviesa, que lo forja 
+                                    y que le da la voluntad necesaria para creer en utopías. 
+                                    Así lo marca su historia, desde la fundación hasta la actualidad.
+                                </p>
+                            </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-3 mt-5">
+                    <div class="col-12 col-md-3 mt-5 d-flex justify-content-center">
                         <article class="cards card-B">
                             <header class="card-header">
                                 <div class="circle-icon">
@@ -107,15 +113,16 @@
                                 </div>
                                 <h3 class="title">Museo</h3>
                             </header>
-                            <p class="text">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
-                                del esfuerzo y del sacrificio individual en pos del bien colectivo. 
-                                Es la identidad que lo atraviesa, que lo forja 
-                                y que le da la voluntad necesaria para creer en utopías. 
-                                Así lo marca su historia, desde la fundación hasta la actualidad.
-                            </p>
+                            <div class="card-text">
+                                <p class="text">La Subcomisión de Museo del Club Estudiantes de La Plata nace oficialmente en 
+                                    diciembre de 2013 de la propuesta de un grupo de socios e historiadores de la 
+                                    necesidad de difusión de su vida social y deportiva y de la urgente preservación 
+                                    de su acervo cultural y patrimonial.
+                                </p>
+                            </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-3 mt-5">
+                    <div class="col-12 col-md-3 mt-5 d-flex justify-content-center">
                         <article class="cards card-C">
                             <header class="card-header">
                                 <div class="circle-icon">
@@ -123,15 +130,17 @@
                                 </div>
                                 <h3 class="title">Fundación</h3>
                             </header>
-                            <p class="text">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
-                                del esfuerzo y del sacrificio individual en pos del bien colectivo. 
-                                Es la identidad que lo atraviesa, que lo forja 
-                                y que le da la voluntad necesaria para creer en utopías. 
-                                Así lo marca su historia, desde la fundación hasta la actualidad.
-                            </p>
+                            <div class="card-text">
+                                <p class="text">La Fundación Estudiantes gira en torno de trabajar en forma conjunta con socios, 
+                                    hinchas y deportistas para hacer de Estudiantes de La Plata un club mas inclusivo 
+                                    y comprometido con las distintas problemáticas sociales del país; atendiendo a las 
+                                    necesidades de los sectores vulnerables desde el aspecto social, cultural y 
+                                    deportivo.                                
+                                </p>
+                            </div>
                         </article>
                     </div>
-                    <div class="col-12 col-md-3 mt-5">
+                    <div class="col-12 col-md-3 mt-5 d-flex justify-content-center">
                         <article class="cards card-D">
                             <header class="card-header">
                                 <div class="circle-icon">
@@ -139,12 +148,14 @@
                                 </div>
                                 <h3 class="title">ADN</h3>
                             </header>
-                            <p class="text">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
-                                del esfuerzo y del sacrificio individual en pos del bien colectivo. 
-                                Es la identidad que lo atraviesa, que lo forja 
-                                y que le da la voluntad necesaria para creer en utopías. 
-                                Así lo marca su historia, desde la fundación hasta la actualidad.
-                            </p>
+                            <div class="card-text">
+                                <p class="text">La Fundación Estudiantes gira en torno de trabajar en forma conjunta con socios, 
+                                    hinchas y deportistas para hacer de Estudiantes de La Plata un club mas inclusivo 
+                                    y comprometido con las distintas problemáticas sociales del país; atendiendo a las 
+                                    necesidades de los sectores vulnerables desde el aspecto social, cultural y 
+                                    deportivo.                                
+                                </p>
+                            </div>
                         </article>
                     </div>
                 </div>
