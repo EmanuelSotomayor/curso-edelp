@@ -9,13 +9,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Sitio web - Potrero digital</title>
+        <title>Estudiantes de la plata - Potrero digital</title>
     </head>
     <body>
         <!--Main contendrá todo el sitio web.-->
         <main role="main">
             <!--El header contendrá el menú-->
-            <header class="headercontainer">
+            <header role="header" class="headercontainer">
                 <!--Menú-->
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--first-color);">
                     <div class="container-fluid">
@@ -41,7 +41,7 @@
             <!--Fin del header-->
 
             <!--Este section contendrá el carrousel--> 
-            <section id="futbol" role="carrousel">
+            <section role="carrousel-section" id="futbol" role="carrousel">
                 <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,11 +70,11 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="visually-hidden">Previo</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
                 
@@ -82,7 +82,7 @@
             <!--Fin del section-->
 
             <!--Inicio del section que contendrá las cards-->
-            <section id="club" class="container-fluid cards-background">
+            <section role="cards-section" id="club" class="container-fluid cards-background">
                 <div class="row">
                     <!--Aplico justify-content-center a todas las columnas para que se centren-->
                     <div class="col-12 col-md-3 mt-5 d-flex justify-content-center">
@@ -96,7 +96,8 @@
                                 <h3 class="title">Historia</h3>
                             </header>
                             <div class="card-text">
-                                <p class="text">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
+                                <p class="text">
+                                    El Club Estudiantes de La Plata nació bajo la cultura del trabajo, 
                                     del esfuerzo y del sacrificio individual en pos del bien colectivo. 
                                     Es la identidad que lo atraviesa, que lo forja 
                                     y que le da la voluntad necesaria para creer en utopías. 
@@ -114,7 +115,8 @@
                                 <h3 class="title">Museo</h3>
                             </header>
                             <div class="card-text">
-                                <p class="text">La Subcomisión de Museo del Club Estudiantes de La Plata nace oficialmente en 
+                                <p class="text">
+                                    La Subcomisión de Museo del Club Estudiantes de La Plata nace oficialmente en 
                                     diciembre de 2013 de la propuesta de un grupo de socios e historiadores de la 
                                     necesidad de difusión de su vida social y deportiva y de la urgente preservación 
                                     de su acervo cultural y patrimonial.
@@ -131,7 +133,8 @@
                                 <h3 class="title">Fundación</h3>
                             </header>
                             <div class="card-text">
-                                <p class="text">La Fundación Estudiantes gira en torno de trabajar en forma conjunta con socios, 
+                                <p class="text">
+                                    La Fundación Estudiantes gira en torno de trabajar en forma conjunta con socios, 
                                     hinchas y deportistas para hacer de Estudiantes de La Plata un club mas inclusivo 
                                     y comprometido con las distintas problemáticas sociales del país; atendiendo a las 
                                     necesidades de los sectores vulnerables desde el aspecto social, cultural y 
@@ -149,17 +152,57 @@
                                 <h3 class="title">ADN</h3>
                             </header>
                             <div class="card-text">
-                                <p class="text">La Fundación Estudiantes gira en torno de trabajar en forma conjunta con socios, 
-                                    hinchas y deportistas para hacer de Estudiantes de La Plata un club mas inclusivo 
-                                    y comprometido con las distintas problemáticas sociales del país; atendiendo a las 
-                                    necesidades de los sectores vulnerables desde el aspecto social, cultural y 
-                                    deportivo.                                
+                                <p class="text">
+                                    El ADN es nuestra escuela la que define nuestros valores, el mismo que nos otorga 
+                                    sentido de pertenencia; es nuestra huella y nuestro legado.
+                                    El ADN es mística que forja nuestra personalidad: nos impulsa a creer en utopías y 
+                                    en la voluntad para alcanzarlas, sobrepasando los límites establecidos.
+                                    El ADN es nuestra identidad y lo que nos une como familia.                                
                                 </p>
                             </div>
                         </article>
                     </div>
                 </div>
             </section>
+            <!--Fin del section de cards-->
+            <!--Inicio del footer-->
+            <footer role="footer" class="container-fluid footer-content">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="d-none d-lg-block col-md-5 offset-1 d-flex align-items-center">
+                        <div class="logoimg">
+                            <a href="https://www.tiendapincha.com/" target="_blank">    
+                                <img class="imglogo" src="assets/logo-tienda.png" alt="No image"/>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 d-flex justify-content-center">
+                        <div class="social-networks d-flex justify-content-evenly">
+                            <a href="https://www.facebook.com/EdelpOficial/" target="_blank">
+                                <div class="circle-social fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/edelpoficial/" target="_blank">
+                                <div class="circle-social insta">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/edelpoficial" target="_blank">
+                                <div class="circle-social tw">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/edelpoficial" target="_blank">
+                                <div class="circle-social yt">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--Fin de footer-->
         </main>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
